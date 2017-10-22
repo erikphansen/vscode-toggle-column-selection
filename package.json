@@ -1,35 +1,33 @@
 {
-    "name": "toggle-column-selection",
-    "displayName": "Toggle Column Selection",
-    "description": "Turn a selection in a column selection à la TextMate",
-    "version": "0.0.1",
-    "publisher": "erikphansen",
-    "engines": {
-        "vscode": "^1.17.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.sayHello"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.0",
-        "eslint": "^4.6.1",
-        "@types/node": "^7.0.0",
-        "@types/mocha": "^2.2.42"
-    }
+  "name": "toggle-column-selection",
+  "displayName": "Toggle Column Selection",
+  "description": "Turn a selection in a column selection à la TextMate",
+  "version": "0.0.1",
+  "publisher": "erikphansen",
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:extension.toggleColumnSelection"],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.toggleColumnSelection",
+        "title": "Toggle Column Selection"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.2",
+    "vscode": "^1.1.5",
+    "mocha": "^3.5.0",
+    "eslint": "^4.6.1",
+    "@types/node": "^7.0.0",
+    "@types/mocha": "^2.2.42"
+  }
 }
