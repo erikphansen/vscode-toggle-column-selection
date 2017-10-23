@@ -33,7 +33,7 @@ function convertToContiguousSelection(editor, selections) {
 
 function activate(context) {
   let disposable = vscode.commands.registerCommand(
-    'extension.toggleColumnSelection',
+    'toggleColumnSelection.toggle',
     function() {
       const editor = vscode.window.activeTextEditor;
       const selections = editor.selections;

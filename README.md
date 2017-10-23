@@ -1,4 +1,4 @@
-# toggle-column-selection README
+# vscode-toggle-column-selection README
 
 This is the README for your extension "toggle-column-selection". After writing up a brief description, we recommend including the following sections.
 
