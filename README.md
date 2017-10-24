@@ -1,3 +1,27 @@
-# vscode-toggle-column-selection README
+# Toggle Column Selection for [Visual Studio Code](http://code.visualstudio.com)
 
-Toggle Column Selection is an extension that adds the ability to convert a multi-line selection into a column selection the way that TextMate 2 does. The way that TextMate does this is one of my favorite ways to set up multiple cursors. Now I can do the same things in Visual Studio Code.
+> Adds a [TextMate 2](https://macromates.com)-style `Toggle Column Selection` command to VSCode
+
+![Demo](images/demo.gif)
+
+## Features ##
+
+- Converts a single contiguous selection into a column selection composed of multiple selections/cursors.
+- Also works in the opposite direction, converting multiple selections/cursors into a single contiguous selection.
+
+## Usage
+
+1. Make a multi-line selection, idealy using your keyboard by holding the `SHIFT` key while using the arrow keys to move the cursor.
+2. Invoke the `Toggle Column Selection` command from the Command Palette (`COMMAND`-`SHIFT`-`P`) or the default keybinding (`OPTION`-`SHIFT`-`I`).
+
+### Crank It To Eleven
+
+To truly mimic TextMate's implementation of this you'll want to trigger this command with a single tap of the `OPTION` key. Sadly VSCode won't allow you to do this. This is where [BetterTouchTool](https://www.boastr.net) comes in. Use BTT to set up a new Key Sequence that maps a single tap of the `OPTION` key to `OPTION`-`SHIFT`-`I`.
+
+![BTT-1](images/btt-1.png)
+![BTT-2](images/btt-2.png)
+
+**TIPS:**
+
+- Make sure you check the `REQUIRED` and `ORDER RELEVANT` boxes for the KEY UP state.
+- BetterTouchTool treats the left and right OPTION keys as different keys so you'll likely want to add two entries, one for each key.
