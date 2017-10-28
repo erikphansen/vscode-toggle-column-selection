@@ -5,15 +5,16 @@
   "icon": "images/icon.png",
   "description": "Turn a selection in a column selection à la TextMate",
   "publisher": "erikphansen",
-  "maintainers": [
-    "Erik P. Hansen <eph@erikphansen.com>"
-  ],
+  "author": {
+    "name": "Erik P. Hansen"
+  },
+  "maintainers": ["Erik P. Hansen <eph@erikphansen.com>"],
   "repository": {
     "type": "git",
     "url": "https://github.com/erikphansen/vscode-toggle-column-selection"
   },
   "engines": {
-    "vscode": "^0.10.0"
+    "vscode": "^1.15.0"
   },
   "categories": ["Other"],
   "activationEvents": ["onCommand:toggleColumnSelection.toggle"],

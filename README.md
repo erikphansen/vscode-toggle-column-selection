@@ -14,14 +14,14 @@
 1. Make a multi-line selection, idealy using your keyboard by holding the `SHIFT` key while using the arrow keys to move the cursor.
 2. Invoke the `Toggle Column Selection` command from the Command Palette (`COMMAND`-`SHIFT`-`P`) or the default keybinding (`OPTION`-`SHIFT`-`I`).
 
-### Crank It To Eleven
+### Crank It To Eleven (aka Tap `OPTION` to Invoke)
 
-To truly mimic TextMate's implementation of this you'll want to trigger this command with a single tap of the `OPTION` key. Sadly VSCode won't allow you to do this. This is where [BetterTouchTool](https://www.boastr.net) comes in. Use BTT to set up a new Key Sequence that maps a single tap of the `OPTION` key to `OPTION`-`SHIFT`-`I`.
+To truly mimic TextMate's implementation you'll want to trigger this command with a single tap of the `OPTION` key. Sadly VSCode won't allow you to do this. This is where [BetterTouchTool](https://www.boastr.net) comes in. Use BTT to set up a new Key Sequence that maps a single tap of the `OPTION` key to `OPTION`-`SHIFT`-`I`.
 
 ![BTT-1](images/btt-1.png)
 ![BTT-2](images/btt-2.png)
 
-**TIPS:**
+**BetterTouchTool TIPS:**
 
-- Make sure you check the `REQUIRED` and `ORDER RELEVANT` boxes for the KEY UP state.
-- BetterTouchTool treats the left and right OPTION keys as different keys so you'll likely want to add two entries, one for each key.
+- Make sure you check the `REQUIRED` and `ORDER RELEVANT` boxes for the **KEY UP** state.
+- BetterTouchTool treats the left and right `OPTION` keys as different keys so you'll likely want to create an entry for each key.
