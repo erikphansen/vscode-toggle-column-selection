@@ -11,6 +11,28 @@ function convertToColumnSelection(editor, selection) {
   // Create a new selection for each line that the currentSelection spans
   for (let i = 0; i < linesInSelection; i++) {
     const thisLine = startPosition.line + i;
+
+    const config = vscode.workspace.getConfiguration('toggleColumnSelection');
+    if (config) {
+      switch(config.get('inLineInSelectionRange')) {
+        case 'none':
+          // cllassic mode
+        break;
+        case 'partial':
+          // Line is shorter than the left column position of would be selection, so skip it
+          if ( editor.document.lineAt(thisLine).range.end.character < startPosition.character) {
+            continue;
+          }
+          break;
+        case 'full':
+          // Line is shorter than the right column position of would be selection
+          if ( editor.document.lineAt(thisLine).range.end.character < endPosition.character) {
+            continue;
+          }
+        break;
+      }
+    }
+
     newSelections.push(
       new vscode.Selection(
         thisLine,
