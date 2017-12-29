@@ -20,6 +20,15 @@
   "activationEvents": ["onCommand:toggleColumnSelection.toggle"],
   "main": "./extension",
   "contributes": {
+    "configuration": {
+      "properties": {
+        "toggleColumnSelection.inLineInSelectionRange": {
+          "type": "string",
+          "default": "none",
+          "description": "Specifies how the line length affects selection in that line. Possible values are none | partial | full."
+        }
+      }
+    },
     "commands": [
       {
         "command": "toggleColumnSelection.toggle",
