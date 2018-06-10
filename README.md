@@ -12,9 +12,11 @@
 ## Usage
 
 1. Make a multi-line selection, idealy using your keyboard by holding the `SHIFT` key while using the arrow keys to move the cursor.
-2. Invoke the `Toggle Column Selection` command from the Command Palette (`COMMAND`-`SHIFT`-`P`) or the default keybinding (`OPTION`-`SHIFT`-`I`).
+2. Invoke the `Toggle Column Selection` command from the Command Palette  or use the default keybinding (`OPTION/ALT`-`SHIFT`-`I`).
 
 ### Crank It To Eleven (aka Tap `OPTION` to Invoke)
+
+> This section only works on Mac; if you know tools for Windows or Linux that let you trigger actions by simply tapping a modifier key, please let me know!
 
 To truly mimic TextMate's implementation you'll want to trigger this command with a single tap of the `OPTION` key. Sadly VSCode won't allow you to do this. This is where [BetterTouchTool](https://www.boastr.net) comes in. Use BTT to set up a new Key Sequence that maps a single tap of the `OPTION` key to `OPTION`-`SHIFT`-`I`.
 
