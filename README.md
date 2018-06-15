@@ -90,7 +90,7 @@ Add the following entry to the `rules` array in your `karabiner.json` file (loca
 }
 ```
 
-Or [use this handy link](karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/erikphansen/vscode-toggle-column-selection/master/karabiner/option-toggle-column-selection-vscode.json) to install the rule directly into Karabiner.
+Or use this handy URL to install the rule directly into Karabiner: `karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/erikphansen/vscode-toggle-column-selection/master/karabiner/option-toggle-column-selection-vscode.json`. (It seems that GitHub will not allow that to be a clickable link.)
 
 #### Option B: BetterTouchTool
 
