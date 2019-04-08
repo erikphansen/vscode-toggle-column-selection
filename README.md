@@ -18,7 +18,9 @@
 
 ## Crank It To Eleven (aka Tap `OPTION` to Invoke)
 
-> This section only applies to macOS. If you know tools for Windows or Linux that let you trigger actions by simply tapping a modifier key, please let me know or submit a PR.
+> This section only applies to macOS & Windows. If you know tools for Linux that let you trigger actions by simply tapping a modifier key, please let me know or submit a PR.
+
+### macOS
 
 To truly mimic TextMate's implementation you'll want to trigger this command with a single tap of the `OPTION` key. Sadly VSCode won't allow you to do this. This is where [Karabiner Elements](https://pqrs.org/osx/karabiner/) or [BetterTouchTool](https://www.boastr.net) come in.
 
@@ -103,3 +105,16 @@ If you don't want to use Karabiner, you can use BTT to set up a new Key Sequence
 
 1. Make sure you check the `REQUIRED` and `ORDER RELEVANT` boxes for the **KEY UP** state.
 2. BetterTouchTool treats the left and right `OPTION` keys as different keys so you'll likely want to create an entry for each key.
+
+### Windows
+
+#### AutoHotkey
+
+If you don't have AutoHotkey installed yet, grab it at [https://www.autohotkey.com](https://www.autohotkey.com/). Then, in your `autohotkey.ahk` script:
+
+```ahk
+#IfWinActive Visual Studio Code
+    ; on LALT key-up, send ALT+SHIFT+I
+    LAlt Up::SendInput !+i
+#IfWinActive
+```
