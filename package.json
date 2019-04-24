@@ -1,6 +1,6 @@
 {
   "name": "vscode-toggle-column-selection",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "displayName": "Toggle Column Selection",
   "icon": "images/icon.png",
   "description": "Turn a selection in a column selection à la TextMate",
