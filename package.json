@@ -1,6 +1,6 @@
 {
   "name": "vscode-toggle-column-selection",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Toggle Column Selection",
   "icon": "images/icon.png",
   "description": "Turn a selection into a column selection à la TextMate",
@@ -8,7 +8,9 @@
   "author": {
     "name": "Erik P. Hansen"
   },
-  "maintainers": ["Erik P. Hansen <eph@erikphansen.com>"],
+  "maintainers": [
+    "Erik P. Hansen <eph@erikphansen.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/erikphansen/vscode-toggle-column-selection"
@@ -16,8 +18,12 @@
   "engines": {
     "vscode": "^1.15.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:toggleColumnSelection.toggle"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:toggleColumnSelection.toggle"
+  ],
   "main": "./extension",
   "contributes": {
     "commands": [
