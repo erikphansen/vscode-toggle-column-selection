@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "displayName": "Toggle Column Selection",
   "icon": "images/icon.png",
-  "description": "Turn a selection in a column selection à la TextMate",
+  "description": "Turn a selection into a column selection à la TextMate",
   "publisher": "erikphansen",
   "author": {
     "name": "Erik P. Hansen"
