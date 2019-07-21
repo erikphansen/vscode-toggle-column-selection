@@ -113,6 +113,7 @@ If you don't want to use Karabiner, you can use BTT to set up a new Key Sequence
 If you don't have AutoHotkey installed yet, grab it at [https://www.autohotkey.com](https://www.autohotkey.com/). Then, in your `autohotkey.ahk` script:
 
 ```ahk
+SetTitleMatchMode 2
 #IfWinActive Visual Studio Code
     ; on LALT key-up, send ALT+SHIFT+I
     LAlt Up::SendInput !+i
